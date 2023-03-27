@@ -1,0 +1,65 @@
+body {
+	box-sizing: border-box;
+	font-family: "Barlow", sans-serif;
+}
+
+.bg-google-dark {
+	background-color: #202124 !important;
+}
+
+.bg-google-darker {
+	background-color: #1f1f1f;
+}
+
+.layout {
+	max-width: 64rem;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.nav-height {
+	height: 60px;
+}
+
+.main {
+	padding: 0 1.5rem;
+	background-color: #292a2d;
+}
+
+.seperator {
+	height: 1px;
+	background-color: #464646;
+	margin: 1rem 0;
+}
+
+.justify-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.post-image {
+	object-fit: cover;
+}
+
+footer {
+	background-color: #1f1f1f;
+	display: flex;
+    flex-direction: column;
+	height: 125px;
+	justify-content: center;
+	align-items: center;
+}
+
+.hover-text:hover{
+    filter: brightness(75%);
+}
+
+.news-post{
+    background-color: #292a2d;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.news-post:hover{
+    background-color: rgba(58, 59, 62, 0.439)
+}

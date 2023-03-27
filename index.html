@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>News Website</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="index.css" />
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<div class="bg-google-dark">
+			<nav class="navbar navbar-expand-md navbar-dark layout nav-height">
+				<a class="navbar-brand" href="#">Amazing News</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarCollapse"
+					aria-controls="navbarCollapse"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Business</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Politics</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Entertainment</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sports</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Technology</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Science</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<main role="main" class="main pt-4 text-light">
+			<div class="row layout">
+				<div class="col-md-8 blog-main">
+					<h3 class="font-weight-bold">Breaking News</h3>
+					<input
+						oninput="searchNews(this)"
+						type="text"
+						style="
+							width: 100%;
+							padding: 0.5rem 0;
+							padding-left: 0.5rem;
+                            margin-bottom: 1.5rem;
+						"
+						placeholder="Search the greatest news here.."
+					/>
+					<div
+						class="blog-post"
+						style="cursor: pointer"
+						onclick="location.href='#'"
+						id="news-posts"
+					></div>
+				</div>
+				<aside class="col-md-4 blog-sidebar">
+					<div class="p-4 mb-3 bg-google-dark rounded">
+						<h4 class="font-weight-bold">About</h4>
+                        <div class="seperator"></div>
+						<p class="mb-0">
+							Welcome to our news website, where we take the news
+							very seriously - just not ourselves. We are a team
+							of highly skilled journalists who love nothing more
+							than bringing you the latest news with a side of
+							doomer energy. We pride ourselves on our ability to
+							deliver the news in a way that's not only
+							informative, but also entertaining. So whether
+							you're here for the latest breaking story or just
+							an, we've got you covered.
+						</p>
+					</div>
+
+					<div class="p-4 bg-google-darker rounded">
+						<h5 class="font-weight-bold">Our Best Picks For You</h5>
+						<div class="seperator"></div>
+						<div class="justify-between" style="gap: 1rem;cursor:pointer;" onclick="location.href='#'">
+							<p style="font-size: 15px" class="hover-text">
+								Breaking: Cats Can Actually Fly (Well, Sort Of)
+							</p>
+							<img
+								src="https://picsum.photos/64?random=1"
+								width="64"
+								height="64"
+								class="rounded"
+							/>
+						</div>
+						<div class="justify-between" style="gap: 1rem;cursor:pointer;" onclick="location.href='#'">
+							<p style="font-size: 15px" class="hover-text">
+								You Won't Believe What Kim Kardashian Just Wore
+								to the Oscars
+							</p>
+							<img
+								src="https://picsum.photos/64?random=2"
+								width="64"
+								height="64"
+								class="rounded"
+							/>
+						</div>
+						<div class="justify-between" style="gap: 1rem;cursor:pointer;" onclick="location.href='#'">
+							<p style="font-size: 15px" class="hover-text">
+								Exclusive: Inside the Abandoned Amusement Park
+								That's Haunted by Ghosts
+							</p>
+							<img
+								src="https://picsum.photos/64?random=3"
+								width="64"
+								height="64"
+								class="rounded"
+							/>
+						</div>
+						<div class="justify-between" style="gap: 1rem;cursor:pointer;" onclick="location.href='#'">
+							<p style="font-size: 15px" class="hover-text">
+								Top 10 Healthy Habits You Need to Know About for
+								a Longer Life
+							</p>
+							<img
+								src="https://picsum.photos/64?random=6"
+								width="64"
+								height="64"
+								class="rounded"
+							/>
+						</div>
+						<div class="justify-between" style="gap: 1rem;cursor:pointer;" onclick="location.href='#'">
+							<p style="font-size: 15px" class="hover-text">
+								New Study Finds That Coffee Can Actually Make
+								You Smarter (So Drink Up!)
+							</p>
+							<img
+								src="https://picsum.photos/64?random=5"
+								width="64"
+								height="64"
+								class="rounded"
+							/>
+						</div>
+						<div class="justify-between" style="gap: 1rem;cursor:pointer;" onclick="location.href='#'">
+							<p style="font-size: 15px" class="hover-text">
+								The Vegan Revolution: How Impossible Foods is
+								Changing the Game for Meatless Burgers
+							</p>
+							<img
+								src="https://picsum.photos/64?random=4"
+								width="64"
+								height="64"
+								class="rounded"
+							/>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</main>
+        <footer>
+            <a class="navbar-brand text-light" href="#">Amazing News</a>
+            <p style="font-size:12px" class="text-light">&copy; Amazing News Inc. All Rights Reserved</p>
+        </footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
